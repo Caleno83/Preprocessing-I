@@ -1,1 +1,304 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-size: 2.5em;
+  line-height: 50px;
+  height: auto;
+}
+html body .container {
+  width: 800x;
+  height: auto;
+  display: flex;
+  margin: 0;
+}
+html body .container h3 {
+  margin-bottom: 30px;
+  margin-top: 20px;
+  padding: -1px 0;
+  border-top: 3px solid black;
+  border-bottom: 3px solid black;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+html body .container .sidebar {
+  height: auto;
+  padding: 0 25px;
+  width: 100%;
+  background: #002633;
+  color: white;
+}
+@media (max-width: 500px) {
+  html body .container .sidebar {
+    display: none;
+  }
+}
+html body .container .sidebar .pic-profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 280px;
+  margin-bottom: 10%;
+  margin-top: 20%;
+}
+html body .container .sidebar .pic-profile img {
+  width: 80%;
+  height: 80%;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+html body .container .sidebar .contact-info,
+html body .container .sidebar .skills {
+  padding: 25px 0;
+  padding-bottom: 13%;
+}
+html body .container .sidebar ul li {
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 18px;
+}
+html body .container .sidebar ul li .icon {
+  width: 35px;
+  height: 35px;
+  margin: 1%;
+  color: white;
+}
+html body .container .sidebar ul li a {
+  text-decoration: none;
+  color: white;
+}
+html body .container .sidebar ul li p {
+  padding: 2px;
+}
+html body .container header nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+html body .container header nav ul a {
+  text-decoration: none;
+  font-size: 2.4rem;
+  padding-top: 20px;
+  padding: 70px;
+  color: black;
+}
+@media (max-width: 500px) {
+  html body .container header nav ul a {
+    padding: 70%;
+    padding-right: 5px;
+    padding-left: 3px;
+  }
+}
+html body .container header nav ul a:hover {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 2px;
+}
+html body .container header .top-resume {
+  padding: 40px;
+  margin: 5%;
+  text-align: center;
+  line-height: 30px;
+  background-color: silver;
+  margin-top: 19px;
+}
+@media (max-width: 500px) {
+  html body .container header .top-resume {
+    margin-right: 10%;
+  }
+}
+html body .container header .top-resume h1 {
+  font-size: 4.1rem;
+}
+html body .container header .top-resume h2 {
+  font-size: 2.8rem;
+}
+html body .container .about {
+  padding-left: 30px;
+  padding-bottom: 2%;
+  font-size: 2.2rem;
+  line-height: 35px;
+}
+@media (max-width: 500px) {
+  html body .container .about p {
+    margin: 5%;
+    margin-left: -4%;
+    font-size: 1.9rem;
+    line-height: 35px;
+  }
+}
+html body .container .education {
+  padding-left: 30px;
+  padding-bottom: 2%;
+  font-size: 2.2rem;
+  line-height: 35px;
+}
+@media (max-width: 500px) {
+  html body .container .education p {
+    margin: 3px;
+    margin-left: 2%;
+    margin-right: 10%;
+    font-size: 1.9rem;
+    line-height: -9px;
+    padding-right: 15%;
+  }
+}
+html body .container .experience {
+  padding-left: 30px;
+  padding-bottom: 2%;
+  font-size: 2.2rem;
+  line-height: 35px;
+}
+@media (max-width: 500px) {
+  html body .container .experience p {
+    margin: 1%;
+    margin-left: 3%;
+    margin-right: 2%;
+    font-size: 1.9rem;
+    line-height: 30px;
+    padding-right: 15%;
+  }
+}
+html body .container p {
+  padding-left: 30px;
+  padding-bottom: 2%;
+  font-size: 2.2rem;
+  line-height: 35px;
+}
